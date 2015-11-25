@@ -13,6 +13,8 @@
 		77D58BD01C0569AE00F4FB12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D58BCE1C0569AE00F4FB12 /* Main.storyboard */; };
 		77D58BD21C0569AE00F4FB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D58BD11C0569AE00F4FB12 /* Assets.xcassets */; };
 		77D58BD51C0569AE00F4FB12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D58BD31C0569AE00F4FB12 /* LaunchScreen.storyboard */; };
+		77D58BDE1C056B6200F4FB12 /* PTTableCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D58BDD1C056B6200F4FB12 /* PTTableCollectionView.m */; };
+		77D58BE11C056D6F00F4FB12 /* PTTableLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D58BE01C056D6F00F4FB12 /* PTTableLeftCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		77D58BD11C0569AE00F4FB12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77D58BD41C0569AE00F4FB12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77D58BD61C0569AE00F4FB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D58BDC1C056B6200F4FB12 /* PTTableCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTableCollectionView.h; sourceTree = "<group>"; };
+		77D58BDD1C056B6200F4FB12 /* PTTableCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTableCollectionView.m; sourceTree = "<group>"; };
+		77D58BDF1C056D6F00F4FB12 /* PTTableLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTableLeftCell.h; sourceTree = "<group>"; };
+		77D58BE01C056D6F00F4FB12 /* PTTableLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTableLeftCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				77D58BC91C0569AE00F4FB12 /* AppDelegate.m */,
 				77D58BCB1C0569AE00F4FB12 /* ViewController.h */,
 				77D58BCC1C0569AE00F4FB12 /* ViewController.m */,
+				77D58BDC1C056B6200F4FB12 /* PTTableCollectionView.h */,
+				77D58BDD1C056B6200F4FB12 /* PTTableCollectionView.m */,
+				77D58BDF1C056D6F00F4FB12 /* PTTableLeftCell.h */,
+				77D58BE01C056D6F00F4FB12 /* PTTableLeftCell.m */,
 				77D58BCE1C0569AE00F4FB12 /* Main.storyboard */,
 				77D58BD11C0569AE00F4FB12 /* Assets.xcassets */,
 				77D58BD31C0569AE00F4FB12 /* LaunchScreen.storyboard */,
@@ -150,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				77D58BCD1C0569AE00F4FB12 /* ViewController.m in Sources */,
+				77D58BE11C056D6F00F4FB12 /* PTTableLeftCell.m in Sources */,
+				77D58BDE1C056B6200F4FB12 /* PTTableCollectionView.m in Sources */,
 				77D58BCA1C0569AE00F4FB12 /* AppDelegate.m in Sources */,
 				77D58BC71C0569AE00F4FB12 /* main.m in Sources */,
 			);
@@ -262,9 +274,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PTTableCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tttpeng.PTTableCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -273,9 +287,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PTTableCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tttpeng.PTTableCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
